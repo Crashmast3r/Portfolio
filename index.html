@@ -10,7 +10,7 @@
     <header>
 
       <div id="title">
-        <p>Ricky van Vliet</p>
+        <p id="name-title">Ricky van Vliet</p>
 
         <h1>Portfolio</h1>
       </div>
@@ -18,6 +18,18 @@
     </header>
 
     <main>
+        <!-- Photo and Navigation -->
+        <div class="nav-container">
+            <div class="image-container">
+                <img src="images/HTML5 Logo 512.png" alt="Portret picture" />
+            </div>
+            <nav>
+                <button id="home-btn">Home</button>
+                <button id="info-btn">More Info</button>
+                <button id="practice-btn">Practice Projects</button>
+                <button id="Live Projects">Live Projects</button>
+            </nav>
+        </div>
         
         <!--Cards section-->
         
@@ -28,6 +40,7 @@
 
         <!--More on me-->
         <div id="info" class="card">
+            <h2>Who's Ricky?</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ea, dolores reiciendis minus nulla consequatur distinctio sunt veritatis vitae nobis eveniet aut cupiditate consequuntur hic dignissimos quisquam alias consectetur porro illum commodi adipisci. Officiis, facere libero quas sed perferendis laboriosam eos quo nostrum cumque sint. Consequatur minus animi vero sequi?</p>
         </div>
 
@@ -37,6 +50,13 @@
             <p>These are projects that are either made for fun or with training purposes in the Codecadamy Full Stack web development course. These projects are not live anywhere.</p>
             
             <div id="projects-container" class="flex-container">
+
+                <div class="projectcard">
+                    <h3 class="project-title">Blessings from the Nine</h3>
+                    <img src="images/JS Logo 512.png" alt="JavaScript logo" class="project-thumbnail" />
+                    <p>Just a Random message generater with an Elder Scrolls theme.</p>
+                    <a href="https://github.com/Crashmast3r/Blessings-from-the-Nine/archive/refs/heads/main.zip">Script Download</a>
+                </div>
                 
                 <div class="projectcard">
                     <h3 class="project-title">BnB Bark</h3>
@@ -55,6 +75,19 @@
             </div>
 
         </div>
+
+        <!--Live Projects-->
+        <div id="rl-projects" class="card">
+            <h2>Practice Projects</h2>
+            <p>These are projects that are either made for fun or with training purposes in the Codecadamy Full Stack web development course. These projects are not live anywhere.</p>
+            
+            <div id="projects-container" class="flex-container">
+
+                <h3>Coming Soon!</h3>
+
+            </div>
+
+        </div>        
 
     </main>
 
