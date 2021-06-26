@@ -90,13 +90,14 @@ nav button {
     border: 1px solid #3de7d3;
     border-radius: 50%;
     background-image: linear-gradient(to bottom, #3de7d3, #ffffff);
-    height: 65px;
-    width: 65px;
+    height: 70px;
+    width: 70px;
     font-family: 'Yellowtail', cursive;
-    font-size: 17px;
+    font-size: 20px;
     box-shadow: 0 8px 16px 0 #344b47;
 }
 
+.selected,
 button:hover,
 button:focus {
     background-image: linear-gradient(to bottom, #3de7d3, #00BBE7);
@@ -122,6 +123,7 @@ button:active {
     background-image: linear-gradient(to top left, #fff, #3de7d3);
     box-shadow: 0 8px 16px 0 #344b47;
     height: 400px;
+    display: none;
 }
 
 h2 {
@@ -133,4 +135,8 @@ h2 {
 .projectcard img {
     max-width: 200px;
     max-height: 100px;
+}
+
+#intro {
+    display: block;
 }

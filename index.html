@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -28,11 +29,12 @@
             <div class="image-container">
                 <img src="images/Portfotio.png" alt="Portret picture" />
             </div>
+
             <nav>
-                <button id="home-btn">Home</button>
-                <button id="info-btn">More <br> Info</button>
-                <button id="practice-btn">Practice Projects</button>
-                <button id="live-btn">Live Projects</button>
+                <button id="home-btn" class="selected" onclick="switchCard('home-btn', 'intro')">Home</button>
+                <button id="info-btn" onclick="switchCard('info-btn', 'info')">More <br> Info</button>
+                <button id="practice-btn" onclick="switchCard('practice-btn', 'practice')">Practice Projects</button>
+                <button id="live-btn" onclick="switchCard('live-btn', 'rl-projects')">Live Projects</button>
             </nav>
         </div>
         
@@ -83,8 +85,8 @@
 
         <!--Live Projects-->
         <div id="rl-projects" class="card">
-            <h2>Practice Projects</h2>
-            <p>These are projects that are either made for fun or with training purposes in the Codecadamy Full Stack web development course. These projects are not live anywhere.</p>
+            <h2>Live Projects</h2>
+            <p>These are projects wich are live and/or in use.</p>
             
             <div id="projects-container" class="flex-container">
 
