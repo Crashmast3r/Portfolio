@@ -8,15 +8,21 @@ html * {
 }
 
 main {
-    width: 60%;
+    width: 65%;
     margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+
     }
     
 .flex-container {
     display: flex;
     overflow: scroll;
-    background-color: lightgrey;
+    background-color: #00b8a5;
     padding: 5px;
+    border-radius: 5%;
+    max-height: inherit;
 }
 
 /* Header Section */
@@ -41,16 +47,18 @@ h1 {
 
 /* Sidebar with Nav */
 
+
 .nav-container {
-    float: right;
-    margin-top: -30px;
+    /*float: right;*/
+    display: inline-block;
+    margin-left: 2rem
 }
 
 .image-container img {
     border: 1px #3de7d3 solid;
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    max-height: 12.5rem;
+    max-width: 12.5rem;
     overflow: hidden;
     box-shadow: 0 8px 20px 0 #344b47;
 }
@@ -60,8 +68,7 @@ nav {
     height: 180px;
     display: grid;
     grid: 4 2;
-    margin: auto;
-    margin-top: 8px;
+    margin: 1rem 2rem 1rem 2rem;
 }
 
 /* Buttons posisions and styling */
@@ -90,8 +97,8 @@ nav button {
     border: 1px solid #3de7d3;
     border-radius: 50%;
     background-image: linear-gradient(to bottom, #3de7d3, #ffffff);
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     font-family: 'Yellowtail', cursive;
     font-size: 20px;
     box-shadow: 0 8px 16px 0 #344b47;
@@ -117,13 +124,14 @@ button:active {
 .card {
     /*border: 3px solid #3de7d3;*/
     border-radius: 20px;
-    width: 725px;
+    max-width: 725px;
     padding: 20px;
-    margin: 50px 0 20px 0;
+    margin: 2rem auto;
     background-image: linear-gradient(to top left, #fff, #3de7d3);
     box-shadow: 0 8px 16px 0 #344b47;
     height: 400px;
     display: none;
+    overflow: auto;
 }
 
 h2 {
@@ -132,9 +140,29 @@ h2 {
 
 /* Project Cards */
 
+.projectcard {
+    display: flex;
+    flex-direction: column;
+    background-color: #aaf894;
+    margin: 0.5rem;
+    border: 3px solid darkslategrey;
+}
 .projectcard img {
-    max-width: 200px;
+    margin: auto;
+    max-width: 80%;
     max-height: 100px;
+    border: 1px solid black;
+}
+
+.projectcard p {
+    padding: 0.1rem
+}
+
+.project-title {
+    margin: auto;
+    max-width: 60%;
+    padding: 0.1rem;
+    text-align: center;
 }
 
 #intro {
