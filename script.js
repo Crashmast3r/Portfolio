@@ -1,12 +1,12 @@
 function switchCard(btn, crd) {
     var rmv = document.getElementsByClassName('selected');
-    rmv[0].classList.remove("selected");
+    var losecard = document.getElementsByClassName('shown');
     
-    document.getElementById(btn).classList.add('selected');
+    // Hide card and style button not selected.
+    rmv[0].classList.remove('selected');
+    losecard[0].classList.remove('shown');
 
-    document.getElementById('intro').style.display = 'none';
-    document.getElementById('info').style.display = 'none';
-    document.getElementById('practice').style.display = 'none';
-    document.getElementById('rl-projects').style.display = 'none';
-    document.getElementById(crd).style.display = 'block';
+    // Style selected button and show corresponding info card.
+    document.getElementById(btn).classList.add('selected');
+    document.getElementById(crd).classList.add('shown');
 };

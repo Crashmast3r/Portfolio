@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -35,13 +35,14 @@
                 <button id="info-btn" onclick="switchCard('info-btn', 'info')">Info</button>
                 <button id="practice-btn" onclick="switchCard('practice-btn', 'practice')">Fun</button>
                 <button id="live-btn" onclick="switchCard('live-btn', 'rl-projects')">Work</button>
+                <button id="contact-btn" onclick="switchCard('contact-btn', 'contact')">Contact</button>
             </nav>
         </div>
         
         <!--Cards section-->
         
         <!--Intro-->
-        <div id="intro" class="card">            
+        <div id="intro" class="card shown">            
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quos consectetur officiis numquam! Iusto doloremque sed aspernatur dolores ad quis laborum pariatur consectetur ex aliquid!</p>
         </div>
 
@@ -56,7 +57,7 @@
             <h2>Practice Projects</h2>
             <p>These are projects that are either made for fun or with training purposes in the Codecadamy Full Stack web development course. These projects are not live anywhere.</p>
             
-            <div id="projects-container" class="flex-container">
+            <div class="flex-container projects-container">
 
                 <div class="projectcard">
                     <h3 class="project-title">Blessings from the Nine</h3>
@@ -88,13 +89,19 @@
             <h2>Live Projects</h2>
             <p>These are projects wich are live and/or in use.</p>
             
-            <div id="projects-container" class="flex-container">
+            <div class="flex-container projects-container">
 
                 <h3>Coming Soon!</h3>
 
             </div>
 
-        </div>        
+        </div> 
+        
+        <!--Contact-->
+        <div id="contact" class="card">
+            <h2>Contact</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ea, dolores reiciendis minus nulla consequatur distinctio sunt veritatis vitae nobis eveniet aut cupiditate consequuntur hic dignissimos quisquam alias consectetur porro illum commodi adipisci. Officiis, facere libero quas sed perferendis laboriosam eos quo nostrum cumque sint. Consequatur minus animi vero sequi?</p>
+        </div>
 
     </main>
 
