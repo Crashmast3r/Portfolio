@@ -10,14 +10,19 @@ html * {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
 main {
     width: 65%;
     margin: auto;
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
-
-    }
+}
+    
     
 .flex-container {
     display: flex;
@@ -100,7 +105,7 @@ nav {
     grid-row: 5;
 }
 
-nav button {
+button {
     border: 1px solid var(--primaryColor);
     border-radius: 50%;
     background-image: linear-gradient(to bottom, var(--primaryColor), #ffffff);
@@ -181,4 +186,61 @@ h2 {
     max-width: 60%;
     padding: 0.1rem;
     text-align: center;
+}
+
+/* Footer */
+
+footer {
+    background-image: linear-gradient(to right, #ffffff, var(--primaryColor), #ffffff);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem 0;
+}
+
+.footercontainer {
+    width: 65%;
+    margin: auto auto;
+}
+
+.footertext {
+    text-align: center;
+    font-family: 'Roboto', cursive;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 96%;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .nav-container {
+        width: 100%;
+    }
+
+    .image-container img {
+        display: block;
+        margin: auto;
+        height: 6rem;
+        width: 6rem;
+    }
+
+    nav {
+        width: 80%;
+        margin: 1.5rem auto .2rem;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+    
 }
