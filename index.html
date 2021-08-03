@@ -24,83 +24,92 @@
     </header>
 
     <main>
-        <!-- Photo and Navigation -->
-        <div class="nav-container">
-            <div class="image-container">
-                <img src="images/Portfotio.png" alt="Portret picture" />
+        <div id="main-flex">
+            <!-- Photo and Navigation -->
+            <div class="nav-container">
+                <div class="image-container">
+                    <img src="images/Portfotio.png" alt="Portret picture" />
+                </div>
+
+                <nav>
+                    <button id="home-btn" class="selected" onclick="switchCard('home-btn', 'intro')">Home</button>
+                    <button id="info-btn" onclick="switchCard('info-btn', 'info')">Info</button>
+                    <button id="practice-btn" onclick="switchCard('practice-btn', 'practice')">Fun</button>
+                    <button id="live-btn" onclick="switchCard('live-btn', 'rl-projects')">Work</button>
+                    <button id="contact-btn" onclick="switchCard('contact-btn', 'contact')">Contact</button>
+                </nav>
+            </div>
+            
+            <!--Cards section-->
+            
+            <!--Intro-->
+            <div id="intro" class="card shown">            
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quos consectetur officiis numquam! Iusto doloremque sed aspernatur dolores ad quis laborum pariatur consectetur ex aliquid!</p>
             </div>
 
-            <nav>
-                <button id="home-btn" class="selected" onclick="switchCard('home-btn', 'intro')">Home</button>
-                <button id="info-btn" onclick="switchCard('info-btn', 'info')">Info</button>
-                <button id="practice-btn" onclick="switchCard('practice-btn', 'practice')">Fun</button>
-                <button id="live-btn" onclick="switchCard('live-btn', 'rl-projects')">Work</button>
-                <button id="contact-btn" onclick="switchCard('contact-btn', 'contact')">Contact</button>
-            </nav>
-        </div>
-        
-        <!--Cards section-->
-        
-        <!--Intro-->
-        <div id="intro" class="card shown">            
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quos consectetur officiis numquam! Iusto doloremque sed aspernatur dolores ad quis laborum pariatur consectetur ex aliquid!</p>
-        </div>
+            <!--More on me-->
+            <div id="info" class="card">
+                <h2>Who's Ricky?</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ea, dolores reiciendis minus nulla consequatur distinctio sunt veritatis vitae nobis eveniet aut cupiditate consequuntur hic dignissimos quisquam alias consectetur porro illum commodi adipisci. Officiis, facere libero quas sed perferendis laboriosam eos quo nostrum cumque sint. Consequatur minus animi vero sequi?</p>
+            </div>
 
-        <!--More on me-->
-        <div id="info" class="card">
-            <h2>Who's Ricky?</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ea, dolores reiciendis minus nulla consequatur distinctio sunt veritatis vitae nobis eveniet aut cupiditate consequuntur hic dignissimos quisquam alias consectetur porro illum commodi adipisci. Officiis, facere libero quas sed perferendis laboriosam eos quo nostrum cumque sint. Consequatur minus animi vero sequi?</p>
-        </div>
-
-        <!--Practice Projects-->
-        <div id="practice" class="card">
-            <h2>Practice Projects</h2>
-            <p>These are projects that are either made for fun or with training purposes in the Codecadamy Full Stack web development course. These projects are not live anywhere.</p>
-            
-            <div class="flex-container projects-container">
-
-                <div class="projectcard">
-                    <h3 class="project-title">Blessings from the Nine</h3>
-                    <img src="images/JS Logo 512.png" alt="JavaScript logo" class="project-thumbnail" />
-                    <p>Just a Random message generater with an Elder Scrolls theme.</p>
-                    <a href="https://github.com/Crashmast3r/Blessings-from-the-Nine/archive/refs/heads/main.zip">Script Download</a>
-                </div>
+            <!--Practice Projects-->
+            <div id="practice" class="card">
+                <h2>Practice Projects</h2>
+                <p>These are projects that are either made for fun or with training purposes in the Codecadamy Full Stack web development course. These projects are not live anywhere.</p>
                 
-                <div class="projectcard">
-                    <h3 class="project-title">BnB Bark</h3>
-                    <img src="images/BnB Thumbnail.jpg" alt="Website Thumbnail" class="project-thumbnail" />
-                    <p>A company homepage. This was made for training purposes.</p>
-                    <a href="https://github.com/Crashmast3r/Company-Homepage-Flexbox/archive/refs/heads/master.zip">Full Project Download</a>
-                </div>
+                <div class="flex-container projects-container">
 
-                <div class="projectcard">
-                    <h3 class="project-title">Parrot Dancing</h3>
-                    <img src="images/BnB Thumbnail.jpg" alt="Website Thumbnail" class="project-thumbnail" />
-                    <p>A homepage for a dancing school. This was made for training purposes.</p>
-                    <a href="https://github.com/Crashmast3r/ParrotDancingHomePage/archive/refs/heads/master.zip">Full Project Download</a>
+                    <div class="projectcard">
+                        <h3 class="project-title">Blessings from the Nine</h3>
+                        <img src="images/JS Logo 512.png" alt="JavaScript logo" class="project-thumbnail" />
+                        <p>Just a Random message generater with an Elder Scrolls theme.</p>
+                        <a href="https://github.com/Crashmast3r/Blessings-from-the-Nine/archive/refs/heads/main.zip">Script Download</a>
+                    </div>
+                    
+                    <div class="projectcard">
+                        <h3 class="project-title">BnB Bark</h3>
+                        <img src="images/BnB Thumbnail.jpg" alt="Website Thumbnail" class="project-thumbnail" />
+                        <p>A company homepage. This was made for training purposes.</p>
+                        <a href="https://github.com/Crashmast3r/Company-Homepage-Flexbox/archive/refs/heads/master.zip">Full Project Download</a>
+                    </div>
+
+                    <div class="projectcard">
+                        <h3 class="project-title">Parrot Dancing</h3>
+                        <img src="images/BnB Thumbnail.jpg" alt="Website Thumbnail" class="project-thumbnail" />
+                        <p>A homepage for a dancing school. This was made for training purposes.</p>
+                        <a href="https://github.com/Crashmast3r/ParrotDancingHomePage/archive/refs/heads/master.zip">Full Project Download</a>
+                    </div>
+
                 </div>
 
             </div>
 
+            <!--Live Projects-->
+            <div id="rl-projects" class="card">
+                <h2>Live Projects</h2>
+                <p>These are projects wich are live and/or in use.</p>
+                
+                <div class="flex-container projects-container">
+
+                    <h3>Coming Soon!</h3>
+
+                </div>
+
+            </div> 
+            
+            <!--Contact-->
+            <div id="contact" class="card">
+                <h2>Contact</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ea, dolores reiciendis minus nulla consequatur distinctio sunt veritatis vitae nobis eveniet aut cupiditate consequuntur hic dignissimos quisquam alias consectetur porro illum commodi adipisci. Officiis, facere libero quas sed perferendis laboriosam eos quo nostrum cumque sint. Consequatur minus animi vero sequi?</p>
+            </div>
         </div>
 
-        <!--Live Projects-->
-        <div id="rl-projects" class="card">
-            <h2>Live Projects</h2>
-            <p>These are projects wich are live and/or in use.</p>
-            
-            <div class="flex-container projects-container">
-
-                <h3>Coming Soon!</h3>
-
-            </div>
-
-        </div> 
-        
-        <!--Contact-->
-        <div id="contact" class="card">
-            <h2>Contact</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ea, dolores reiciendis minus nulla consequatur distinctio sunt veritatis vitae nobis eveniet aut cupiditate consequuntur hic dignissimos quisquam alias consectetur porro illum commodi adipisci. Officiis, facere libero quas sed perferendis laboriosam eos quo nostrum cumque sint. Consequatur minus animi vero sequi?</p>
+        <!--Skills-->
+        <div class="skills">
+            <img src="images/HTML5 Logo 512.png" alt="HTML5 Logo">
+            <img src="images/CSS3 Logo 1024.png" alt="CSS3 Logo">
+            <img src="images/JS Logo 512.png" alt="JavaScript Logo">
         </div>
 
     </main>

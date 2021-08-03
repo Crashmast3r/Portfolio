@@ -18,19 +18,19 @@ body {
 main {
     width: 65%;
     margin: auto;
+    
+}
+
+#main-flex {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
+    margin: auto;
 }
     
     
 .flex-container {
     display: flex;
-    overflow: scroll;
-    background-color: #00b8a5;
-    padding: 5px;
-    border-radius: 5%;
-    max-height: inherit;
 }
 
 /* Header Section */
@@ -131,19 +131,13 @@ button:active {
     transform: translateY(4px);
 }
 
-/* Project card containers */
-
-.projects-container::-webkit-scrollbar {
-    scrollbar-color: black;
-    scrollbar-width: 5px;
-}
-
 /* Cards Section */
 /* Main Cards */
 
 .card {
     border-radius: 20px;
     max-width: 725px;
+    max-height: 600px;
     padding: 20px;
     margin: 1rem auto;
     background-image: linear-gradient(to top left, #fff, var(--primaryColor));
@@ -163,16 +157,29 @@ h2 {
 
 /* Project Cards */
 
+.projects-container {
+    overflow: scroll;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #00b8a5;
+    margin-top: 1em;
+    padding: 10px;
+    border-radius: 20px;
+    height: 275px;
+}
+
 .projectcard {
     display: flex;
+    max-width: 200px;
     flex-direction: column;
     background-color: #aaf894;
-    margin: 0.5rem;
     border: 3px solid darkslategrey;
+    padding: 5px;
+    margin-top: 3px;
 }
 .projectcard img {
     margin: auto;
-    max-width: 80%;
+    max-width: 100px;
     max-height: 100px;
     border: 1px solid black;
 }
@@ -188,14 +195,25 @@ h2 {
     text-align: center;
 }
 
+/* Skills Logo's */
+
+.skills {
+
+}
+
+.skills img {
+    width: 100px;
+    margin: auto;
+}
+
 /* Footer */
 
 footer {
     background-image: linear-gradient(to right, #ffffff, var(--primaryColor), #ffffff);
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    padding: 1rem 0;
+    padding: .5rem 0;
 }
 
 .footercontainer {
