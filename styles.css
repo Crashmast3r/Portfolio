@@ -13,6 +13,7 @@ html * {
 body {
     position: relative;
     min-height: 100vh;
+    background-color: #d3d3d3;
 }
 
 main {
@@ -22,11 +23,8 @@ main {
 
 #main-flex {
     display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    margin: auto;
+    flex-flow: row-reverse nowrap;
 }
-    
     
 .flex-container {
     display: flex;
@@ -34,7 +32,7 @@ main {
 
 /* Header Section */
 header {
-    background-image: linear-gradient(to right, #ffffff, var(--primaryColor), #ffffff);
+    background-image: linear-gradient(to right, #d3d3d3, var(--primaryColor), #d3d3d3);
     width: 100%;
 }
 
@@ -54,17 +52,16 @@ h1 {
 
 /* Sidebar with Nav */
 
-
 .nav-container {
     display: inline-block;
-    margin-left: 0.5rem
+    margin-left: 1rem;
 }
 
 .image-container img {
     border: 1px var(--primaryColor) solid;
     border-radius: 50%;
-    max-height: 12.5rem;
-    max-width: 12.5rem;
+    height: 12.5rem;
+    width: 12.5rem;
     overflow: hidden;
     box-shadow: 0 8px 20px 0 #344b47;
 }
@@ -77,7 +74,33 @@ nav {
     margin: 1.5rem 2rem 1rem 2rem;
 }
 
-/* Buttons positions and styling */
+/* Buttons styling and positions */
+
+button {
+    border: 1px solid var(--primaryColor);
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, var(--primaryColor), #fff);
+    height: 60px;
+    width: 60px;
+    font-family: 'Yellowtail', cursive;
+    font-size: 20px;
+    box-shadow: 0 8px 16px 0 #344b47;
+    margin-top: -1rem;
+}
+
+.selected,
+button:hover,
+button:focus {
+    background-image: linear-gradient(to bottom, var(--secundaryColor), var(--primaryColor));
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button:active {
+    box-shadow: 0 4px 12px 0 #344b47;
+    transform: translateY(4px);
+}
 
 #home-btn {
     grid-column: 1;
@@ -104,38 +127,12 @@ nav {
     grid-row: 5;
 }
 
-button {
-    border: 1px solid var(--primaryColor);
-    border-radius: 50%;
-    background-image: linear-gradient(to bottom, var(--primaryColor), #ffffff);
-    height: 60px;
-    width: 60px;
-    font-family: 'Yellowtail', cursive;
-    font-size: 20px;
-    box-shadow: 0 8px 16px 0 #344b47;
-    margin-top: -1rem;
-}
-
-.selected,
-button:hover,
-button:focus {
-    background-image: linear-gradient(to bottom, var(--secundaryColor), var(--primaryColor));
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-button:active {
-    box-shadow: 0 4px 12px 0 #344b47;
-    transform: translateY(4px);
-}
-
 /* Cards Section */
 /* Main Cards */
 
 .card {
     border-radius: 20px;
-    max-width: 725px;
+    max-width: 1000px;
     max-height: 600px;
     padding: 20px;
     margin: 1rem auto;
@@ -164,27 +161,35 @@ h2 {
     margin-top: 1em;
     padding: 10px;
     border-radius: 20px;
-    height: 275px;
+    height: 300px;
 }
 
 .projectcard {
     display: flex;
     max-width: 200px;
     flex-direction: column;
-    background-color: #aaf894;
+    background-color: rgba(170, 248, 148, .5);
     border: 3px solid darkslategrey;
-    padding: 5px;
-    margin-top: 3px;
+    padding: .5rem;
+    margin-top: .5rem;
 }
+
 .projectcard img {
     margin: auto;
-    max-width: 160px;
+    max-width: 170px;
     max-height: 100px;
     border: 1px solid black;
 }
 
 .projectcard p {
-    padding: 0.1rem
+    padding: .1rem;
+    text-align: center;
+}
+
+.projectcard a {
+    padding: .2rem;
+    font-weight: bold;
+    color: var(--secundaryColor);
 }
 
 .project-title {
@@ -211,7 +216,7 @@ h2 {
 /* Footer */
 
 footer {
-    background-image: linear-gradient(to right, #ffffff, var(--primaryColor), #ffffff);
+    background-image: linear-gradient(to right, #d3d3d3, var(--primaryColor), #d3d3d3);
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -228,7 +233,6 @@ footer {
     font-family: 'Roboto', cursive;
     font-size: 1rem;
     font-weight: bold;
-    
 }
 
 /* Media Queries */
@@ -244,6 +248,7 @@ footer {
 
     .nav-container {
         width: 100%;
+        margin-top: -.5rem;
     }
 
     .image-container img {
@@ -273,17 +278,22 @@ footer {
         align-content: middle;
     }
 
-    .project-title {
+    .project-title,
+    .projectcard a {
         max-width: 100%;
         width: 100%;
         flex: 0 1 100%;
     }
 
     .projectcard img,
-    .projectcard p,
-    .projectcard a {
+    .projectcard p {
         flex: 1 0 20%;
         margin: .5rem;
+    }
+
+    .projectcard img {
+        max-width: 100px;
+        max-height: 100px;
     }
 
     .skills {
@@ -294,5 +304,11 @@ footer {
         position: relative;
         margin-top: 2rem;
     }
-    
+}
+
+@media screen and (max-width: 1024px) {
+
+    main {
+        width: 90%;
+    }
 }
