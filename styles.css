@@ -80,10 +80,11 @@ button {
     border: 1px solid var(--primaryColor);
     border-radius: 50%;
     background-image: linear-gradient(to bottom, var(--primaryColor), #fff);
-    height: 60px;
-    width: 60px;
+    height: 63px;
+    width: 63px;
     font-family: 'Yellowtail', cursive;
     font-size: 20px;
+    line-height: .8;
     box-shadow: 0 8px 16px 0 #344b47;
     margin-top: -1rem;
 }
@@ -107,12 +108,12 @@ button:active {
     grid-row: 1;
 }
 
-#info-btn {
+#about-btn {
     grid-column: 2;
     grid-row: 2;
 }
 
-#practice-btn {
+#example-btn {
     grid-column: 1;
     grid-row: 3;
 }
@@ -133,8 +134,8 @@ button:active {
 .card {
     border-radius: 20px;
     max-width: 1000px;
-    max-height: 600px;
-    padding: 20px;
+    max-height: 615px;
+    padding: 10px;
     margin: 1rem auto;
     background-image: linear-gradient(to top left, #fff, var(--primaryColor));
     box-shadow: 0 8px 16px 0 #344b47;
@@ -148,13 +149,58 @@ button:active {
 }
 
 h2 {
+    font-family: 'Yellowtail', cursive;
+    font-size: 3rem;
     text-align: center;
+}
+
+#intro-title,
+#about-title {
+    font-family: 'Yellowtail', cursive;
+    transform: rotate(350deg);
+    font-size: 3rem;
+    line-height: 2.3rem;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+}
+
+#intro-text,
+.about-text {
+    color: rgb(34, 56, 56);
+    font-weight: 600; 
+    text-align: left;    
+    margin-top: 1em;
+}
+
+#intro-text {
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    line-height: 2.3rem;
+}
+
+.about-text {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    flex: 1;
+    padding: 1rem;
+}
+
+#further {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+}
+.bolder {
+    color: black;
+    font-size: 1.7rem;
+    font-weight: bolder;
 }
 
 /* Project Cards */
 
 .projects-container {
-    overflow: scroll;
+    overflow: hidden scroll;
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: #00b8a5;
@@ -168,8 +214,8 @@ h2 {
     display: flex;
     max-width: 200px;
     flex-direction: column;
-    background-color: rgba(170, 248, 148, .5);
-    border: 3px solid darkslategrey;
+    background-color: /*rgba(170, 248, 148, .5)*/rgba(101, 140, 223, .5);
+    border: 3px solid rgb(34, 56, 56);
     padding: .5rem;
     margin-top: .5rem;
 }
@@ -237,7 +283,7 @@ footer {
 
 /* Media Queries */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     main {
         width: 96%;
     }
@@ -259,7 +305,7 @@ footer {
     }
 
     nav {
-        width: 80%;
+        width: 90%;
         margin: 1.5rem auto .2rem;
         height: auto;
         display: flex;
@@ -268,6 +314,20 @@ footer {
 
     .card {
         max-width: 90%;
+        max-height: none;
+    }
+
+    #intro-text,
+    #about-text {
+        font-size: 1rem;
+    }
+
+    .about-flex {
+        flex-direction: column;
+    }
+
+    .bolder {
+        font-size: 1.2rem;
     }
 
     .projectcard {
@@ -306,9 +366,17 @@ footer {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
 
     main {
         width: 90%;
+    }
+
+    #intro-text {
+        font-size: 1.2rem;
+    }
+
+    .bolder {
+        font-size: 1.4rem;
     }
 }

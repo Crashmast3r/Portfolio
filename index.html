@@ -34,9 +34,9 @@
 
                 <nav>
                     <button id="home-btn" class="selected" onclick="switchCard('home-btn', 'intro')">Home</button>
-                    <button id="info-btn" onclick="switchCard('info-btn', 'info')">Info</button>
-                    <button id="practice-btn" onclick="switchCard('practice-btn', 'practice')">Fun</button>
-                    <button id="live-btn" onclick="switchCard('live-btn', 'rl-projects')">Work</button>
+                    <button id="about-btn" onclick="switchCard('about-btn', 'about')">About Me</button>
+                    <button id="example-btn" onclick="switchCard('example-btn', 'example')">Example Projects</button>
+                    <button id="live-btn" onclick="switchCard('live-btn', 'live-projects')">Live Projects</button>
                     <button id="contact-btn" onclick="switchCard('contact-btn', 'contact')">Contact</button>
                 </nav>
             </div>
@@ -45,18 +45,46 @@
             
             <!--Intro-->
             <div id="intro" class="card shown">            
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quos consectetur officiis numquam! Iusto doloremque sed aspernatur dolores ad quis laborum pariatur consectetur ex aliquid!</p>
+                <h2 id="intro-title">Web Developer <br>Full-stack</h2>
+                <p id="intro-text"> 
+                    <span class="bolder">Welcome</span> to my portfolio and <span class="bolder">Thank you</span> for visiting. <br>
+                    My name is <span class="bolder">Ricky</span> and I was born <br>
+                    on the 16th of July in 1986. <br>
+                    Living in <span class="bolder">The Netherlands</span>. <br>
+                    <br>
+                    Still learning so <span class="bolder">check back</span> regularly for <span class="bolder">new projects</span>!
+                </p>
             </div>
 
             <!--More on me-->
-            <div id="info" class="card">
-                <h2>Who's Ricky?</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ea, dolores reiciendis minus nulla consequatur distinctio sunt veritatis vitae nobis eveniet aut cupiditate consequuntur hic dignissimos quisquam alias consectetur porro illum commodi adipisci. Officiis, facere libero quas sed perferendis laboriosam eos quo nostrum cumque sint. Consequatur minus animi vero sequi?</p>
+            <div id="about" class="card">
+                <h2 id="about-title">Who's Ricky?</h2>
+                <div class="flex-container about-flex">
+                    <p class="about-text">For years I've had jobs in sales, building and/or repairing computers and fixing phones.
+                        I worked at these jobs because that's where my experience took me. Now it's time to work a job
+                        that I love instead of one I just can. <br>
+                    </p>
+                    <p class="about-text">In late 2020 I began to learn how to code and immediately fell in love. I love the logic behind the coding
+                        and the creative aspect in the design part. <br>
+                    </p>
+                    <p class="about-text">Besides being a developer, I'm a:<br>
+                        <br> <strong>
+                        - Father of 3 <br>
+                        - Player of Games <br>
+                        - Listener of Music <br>
+                        - Reader of Books <br>
+                        - Watcher of YouTube <br>
+                        <br> </strong>
+                    </p>
+                </div>
+                <p id="further">For any further information please contact me.<br>
+                    Contact info under the Contact button.
+                </p>
             </div>
 
             <!--Practice Projects-->
-            <div id="practice" class="card">
-                <h2>Practice Projects</h2>
+            <div id="example" class="card">
+                <h2>Example Projects</h2>
                 <p>These are projects that are either made for fun or with training purposes in the Codecadamy Full Stack web development course. These projects are not live anywhere.</p>
                 
                 <div class="flex-container projects-container">
@@ -75,25 +103,18 @@
                         <a href="https://github.com/Crashmast3r/Company-Homepage-Flexbox/archive/refs/heads/master.zip">Full Project Download</a>
                     </div>
 
-                    <div class="projectcard">
-                        <h3 class="project-title">Parrot Dancing</h3>
-                        <img src="images/BnB Thumbnail.jpg" alt="Website Thumbnail" class="project-thumbnail" />
-                        <p>A homepage for a dancing school. This was made for training purposes.</p>
-                        <a href="https://github.com/Crashmast3r/ParrotDancingHomePage/archive/refs/heads/master.zip">Full Project Download</a>
-                    </div>
-
                 </div>
 
             </div>
 
             <!--Live Projects-->
-            <div id="rl-projects" class="card">
+            <div id="live-projects" class="card">
                 <h2>Live Projects</h2>
                 <p>These are projects wich are live and/or in use.</p>
                 
                 <div class="flex-container projects-container">
 
-                    <h3>Coming Soon!</h3>
+                    <h3>Soon&trade;</h3>
 
                 </div>
 
