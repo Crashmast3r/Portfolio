@@ -191,10 +191,17 @@ h2 {
     text-align: center;
     color: black;
 }
+
 .bolder {
     color: black;
     font-size: 1.7rem;
     font-weight: bolder;
+}
+
+.description {
+    width: 80%;
+    margin: auto;
+    font-size: 1.2rem;
 }
 
 /* Project Cards */
@@ -208,6 +215,8 @@ h2 {
     padding: 10px;
     border-radius: 20px;
     height: 300px;
+    scrollbar-width: thin;
+    scrollbar-color: #00b8a5 var(--secundaryColor);
 }
 
 .projectcard {
@@ -218,6 +227,7 @@ h2 {
     border: 3px solid rgb(34, 56, 56);
     padding: .5rem;
     margin-top: .5rem;
+    line-height: 1rem;
 }
 
 .projectcard img {
@@ -233,9 +243,10 @@ h2 {
 }
 
 .projectcard a {
+    text-align: center;
     padding: .2rem;
     font-weight: bold;
-    color: var(--secundaryColor);
+    color: darkslategray;
 }
 
 .project-title {
