@@ -247,6 +247,19 @@ h2 {
     scrollbar-color: #00b8a5 var(--secundaryColor);
 }
 
+.projects-container::-webkit-scrollbar {
+    width: 5px;
+    background-color: #00b8a5;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+    background-color: var(--secundaryColor);
+}
+
+.projects-container::-webkit-scrollbar-button {
+    display: none;
+}
+
 .projectcard {
     display: flex;
     max-width: 200px;
