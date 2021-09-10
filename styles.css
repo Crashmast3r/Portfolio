@@ -30,6 +30,11 @@ main {
     display: flex;
 }
 
+p {
+    color: rgb(34, 56, 56);
+    font-weight: 600;
+}
+
 /* Header Section */
 header {
     background-image: linear-gradient(to right, #d3d3d3, var(--primaryColor), #d3d3d3);
@@ -204,6 +209,29 @@ h2 {
     font-size: 1.2rem;
 }
 
+#contact-text {
+    display: block;
+    width: 80%;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: auto;
+}
+
+#mail-me {
+    transform: rotate(350deg);
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+#mailto-link a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 2.5rem auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 /* Project Cards */
 
 .projects-container {
@@ -223,7 +251,7 @@ h2 {
     display: flex;
     max-width: 200px;
     flex-direction: column;
-    background-color: /*rgba(170, 248, 148, .5)*/rgba(101, 140, 223, .5);
+    background-color: rgba(101, 140, 223, .5);
     border: 3px solid rgb(34, 56, 56);
     padding: .5rem;
     margin-top: .5rem;
@@ -240,11 +268,13 @@ h2 {
 .projectcard p {
     padding: .1rem;
     text-align: center;
+    color: black;
+    font-weight: 400;
 }
 
 .projectcard a {
     text-align: center;
-    padding: .2rem;
+    padding: .5rem;
     font-weight: bold;
     color: darkslategray;
 }
@@ -317,7 +347,7 @@ footer {
 
     nav {
         width: 90%;
-        margin: 1.5rem auto .2rem;
+        margin: 1.5rem 0 .2rem;
         height: auto;
         display: flex;
         justify-content: space-between;
@@ -329,8 +359,17 @@ footer {
     }
 
     #intro-text,
-    #about-text {
+    .about-text {
         font-size: 1rem;
+    }
+
+    #mail-me {
+        margin: 2rem auto;
+        padding: 0;
+    }
+
+    #mailto-link a {
+        font-size: 1.2rem;
     }
 
     .about-flex {
